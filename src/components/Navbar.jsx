@@ -12,7 +12,7 @@ const Navbar = () => {
         {/*MOBILE MENY*/}
         <div className="md:hidden">
             <div className="cursor-pointervtext-4xl"
-            onAuxClick={() => setOpen((prev) => !prev)}>
+            onClick={() => setOpen((prev) => !prev)}>
                 {open ? "X" : "|"}
             </div>
         </div>
