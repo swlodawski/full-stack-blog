@@ -15,7 +15,7 @@ const Navbar = () => {
             <div className="cursor-pointervtext-4xl"
             onClick={() => setOpen((prev) => !prev)}
             >
-                {open ? "X" : "|"}
+                {open ? "X" : "🤮"}
             </div>
             {/*MOBILE LINK LIST*/}
             <div className={`w-full h-screen flex flex-col items-center justify-center gap-8 font-medium text-lg absolute top-16 transition-all ease-in-out ${open ? "-right-0" : "-right-[100%]"}`}>
