@@ -12,21 +12,29 @@ import {
 const router = createBrowserRouter([
 {  
   path:"/",
-  element: (
-    <div>
-    <h1>Hello World</h1>
-    <Link to="about">About Us</Link>
-    </div>
-  ),
+  element: <Homepage />,
 },
 {
-  path: "about",
-  element: <div>About</div>,
+  path: "/posts",
+  element: <PostListPage />,
+},
+{
+  path: "/write",
+  element: <Write />,
+},
+{
+  path: "/login",
+  element: <LoginPage />,
+},
+{
+  path: "/register",
+  element: <RegisterPage />,
 },
 ]);
 
 createRoot(document.getElementById('root')).render(
   <StrictMode>
+    <RouterProvider router={router} />
     <App />
   </StrictMode>,
 );
