@@ -6,7 +6,7 @@ const Navbar = () => {
         <div className="w-full h-16 md:h-20 flex items-center justify-between">
         {/*LOGO*/}
         <div className='flex items-center gap-4 text-2xl font-bold'>
-            <IKImage urlEndpoint={import.meta.env.VITE_YOUR_IK_URL_ENDPOINT} path="/logo.png" className="w-8 h-8" alt="" />
+            {/* <Image src="logo.png" alt="Lama Logo" w={32} h={32}/> */}
             <span>lamalog</span>
         </div>
         {/*MOBILE MENU*/}
